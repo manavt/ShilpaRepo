@@ -1,0 +1,4 @@
+page_caching == action_caching
+
+
+before_action :authenticate, only: [:index]

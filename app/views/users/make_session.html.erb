@@ -1,0 +1,20 @@
+<%= form_tag('/users/auth_sing_in', method: :post) do%>
+<table>
+  <tr>
+    <td><%= label_tag :email%></td>
+    <td><%= text_field_tag :email%></td>
+  </tr>
+  <tr>
+    <td><%= label_tag :password%></td>
+    <td><%= text_field_tag :password%></td>
+  </tr>
+  <tr>
+    <td><%= submit_tag "Sign In"%></td>
+    </tr>
+</table>
+<%end%>
+
+<%= link_to "Facebook", "/auth/facebook"%>
+
+
+<!-- fields_for -->
